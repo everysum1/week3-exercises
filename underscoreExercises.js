@@ -1,13 +1,12 @@
 // Before you get started, we're going to load this file into our index.html file so we can see our console.logs show up in the browser like we did yesterday! 
   // To do this, open up your index.html file in your favorite text editor. 
-  // You'll notice that we're loading up several script files already, for the exercises we've done over the past two days. 
-  //     <script type="text/javascript" src="day3Callbacks.js"></script>
-  // What the browser is doing is going off and loading/executing them in the order we give these files. 
-    // So first it's going to go through and load up the day3Callbacks.js file, and execute all the code we've written in there. 
-    // Then, after we've already run all of day3Callbacks.js, it's going to go through and run day4Underscore.js, with all the results from day3Callbacks.js available to us since it's already been run!
-    // You can roughly think of this as if we just copied and pasted the code from these two files into the same file, in the order that we gave the file names. 
-  // Let's go throguh and duplicate one of these lines, changing the name of the file to day4Underscore.js.
-  // Now just make sure that your day4Underscore.js file is saved in the same location as your other two .js files, and you should be good to go!
+  // You'll notice that we're loading up several script files already, for the exercises we've done previously.
+  // It's important to know that the order of the scripts matter - they're loaded in the sequence.
+  // Note that we are loading the Underscore.js library  
+  //       <script type="text/javascript" src="lib/underscore.js"></script>
+  // Go ahead and add a script tag for this file (underscoreExercises.js) AFTER the underscore.js library script tag 
+  // What the browser is doing is going off and loading/executing all of the code in the underscore.js file
+  // Once it's done with that, it will load this file and execute all of the code in here!
 
 // ********** MAP EXERCISES**********
 // Map takes in an array or object, mutates it in some way, and returns the mutated array. 
@@ -128,9 +127,9 @@ var obj = {
   // 10
   // Now that you're comfortable accessing each value in obj, let's console log both key and the relevant value stored in obj, again, without using key to access that value, since _.each gives the value to us directly. 
   // So what we'd expect to see in our console is:
-    // 'the value of key is: city, the value _.each is giving us from that object is Oakland'
-    // 'the value of key is: slingsCode, the value _.each is giving us from that object is true'
-    // 'the value of key is: excitementLevel, the value _.each is giving us from that object is 10'
+    // 'the key is: city, the value _.each is giving us from that object is Oakland'
+    // 'the key is: slingsCode, the value _.each is giving us from that object is true'
+    // 'the key is: excitementLevel, the value _.each is giving us from that object is 10'
 // You should be feeling pretty great about iterating through objects using _.each now! 
 
 

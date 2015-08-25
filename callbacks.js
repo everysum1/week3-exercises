@@ -1,3 +1,11 @@
+// Before you get started, we're going to load this file into our index.html file so we can see our console.logs show up in the browser like we did yesterday! 
+  // To do this, open up your index.html file in your favorite text editor. 
+  // Uncomment the script for today's callback exercises. 
+  // You can go ahead and comment out other scripts so that your console doesn't get unnecessarily cluttered.
+
+
+// ********** CALLBACK EXERCISES **********
+
 // Let's do a quick review of functions. 
 // Remember that a function is just a block of code that we've created but not invoked yet. 
 // An analogy for this is a recipe. Writing a function is like writing a recipe. Invoking a function is like actually baking that recipe. Another way of thinking of this is that the function is a set of instructions, but we haven't yet carried out those instructions. 
