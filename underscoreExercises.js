@@ -8,43 +8,6 @@
   // What the browser is doing is going off and loading/executing all of the code in the underscore.js file
   // Once it's done with that, it will load this file and execute all of the code in here!
 
-// ********** MAP EXERCISES**********
-// Map takes in an array or object, mutates it in some way, and returns the mutated array. 
-  // The key part is that map returns the mutated array. It does this for you automatically, but some people will forget to store the results of what map returns into a variable, and thus, miss out on all the work that map just did for us. 
-// The callback function inside of map does three key things:
-  // 1. It takes in an item (the current item we're iterating through in the array).
-  // 2. It performs some logic on that item, most frequently mutating that item in some way.
-  // 3. It returns an item that map will automatically add to our returnArray for us behind the scenes. 
-  // Since the callback is run once on every item in our original array, and the return values from our callback are pushed into our resultsArray by map, our final resultsArray that map returns will always have the same number of items in it that our original array did. 
-  // The key part is that the callback function inside of map has to do these three things every time. 
-    // And then map returns an array with the values returned from every iteration of our callback function.
-    // What happens if we don't explicitly return anything from our callback function? Can we shorten the array that way? 
-      // Remember that JS automatically returns undefined from a function for us if we don't return anything ourselves. 
-
-// So let's get in some practice with map!
-var testArr = [100,200,300,400,500];
-// 1. Add 5 to each item in testArr
-  // console.log the results returned from map. You should see an array of [105,205,305,405,505]
-  // console.log testArr. This should not have changed at all. If it did change, that means you're using map like each to have side effects, and that's not what map is designed for. 
-
-// 2. Let's do another transform. 
-  var shortNameArr = ['SF','NYC','Chi','Oak','SJ'];
-  var cityMapper = {
-    SF: 'San Francisco',
-    NYC: 'New York City',
-    Chi: 'Chicago',
-    Oak: 'Oakland',
-    SJ: 'San Jose'
-  };
-  // Let's take our shortNameArr and return an array that has the longform names of each city. So we'd expect to see ['San Francisco','New York City','Chicago','Oakland','San Jose']; 
-  // Again, console.log the results of map, and console.log shortNameArr to make sure it hasn't changed. 
-  // If you're not getting the results you expect, check back with the three rules of what our callback function must do. 
-
-// 3. Now let's use map to take an array of strings, and return an array of objects. 
-  var colorArray = ['red','purple','orange','yellow','green','purple'];
-  // let's take in colorArray, and return an array of objects that have a color property set equal to each item in colorArray. 
-  // Expected Results: [{color: 'red'}, {color:'orange'}, {color:'purple]'}, {color:'yellow'}, {color:'green'}, {color:'purple'}]
-
 
 // ********** EACH EXERCISES**********
 
@@ -131,6 +94,46 @@ var obj = {
     // 'the key is: slingsCode, the value _.each is giving us from that object is true'
     // 'the key is: excitementLevel, the value _.each is giving us from that object is 10'
 // You should be feeling pretty great about iterating through objects using _.each now! 
+
+
+// ********** MAP EXERCISES**********
+// Map takes in an array or object, mutates it in some way, and returns the mutated array. 
+  // The key part is that map returns the mutated array. It does this for you automatically, but some people will forget to store the results of what map returns into a variable, and thus, miss out on all the work that map just did for us. 
+// The callback function inside of map does three key things:
+  // 1. It takes in an item (the current item we're iterating through in the array).
+  // 2. It performs some logic on that item, most frequently mutating that item in some way.
+  // 3. It returns an item that map will automatically add to our returnArray for us behind the scenes. 
+  // Since the callback is run once on every item in our original array, and the return values from our callback are pushed into our resultsArray by map, our final resultsArray that map returns will always have the same number of items in it that our original array did. 
+  // The key part is that the callback function inside of map has to do these three things every time. 
+    // And then map returns an array with the values returned from every iteration of our callback function.
+    // What happens if we don't explicitly return anything from our callback function? Can we shorten the array that way? 
+      // Remember that JS automatically returns undefined from a function for us if we don't return anything ourselves. 
+
+// So let's get in some practice with map!
+var testArr = [100,200,300,400,500];
+// 1. Add 5 to each item in testArr
+  // console.log the results returned from map. You should see an array of [105,205,305,405,505]
+  // console.log testArr. This should not have changed at all. If it did change, that means you're using map like each to have side effects, and that's not what map is designed for. 
+
+// 2. Let's do another transform. 
+  var shortNameArr = ['SF','NYC','Chi','Oak','SJ'];
+  var cityMapper = {
+    SF: 'San Francisco',
+    NYC: 'New York City',
+    Chi: 'Chicago',
+    Oak: 'Oakland',
+    SJ: 'San Jose'
+  };
+  // Let's take our shortNameArr and return an array that has the longform names of each city. So we'd expect to see ['San Francisco','New York City','Chicago','Oakland','San Jose']; 
+  // Again, console.log the results of map, and console.log shortNameArr to make sure it hasn't changed. 
+  // If you're not getting the results you expect, check back with the three rules of what our callback function must do. 
+
+// 3. Now let's use map to take an array of strings, and return an array of objects. 
+  var colorArray = ['red','purple','orange','yellow','green','purple'];
+  // let's take in colorArray, and return an array of objects that have a color property set equal to each item in colorArray. 
+  // Expected Results: [{color: 'red'}, {color:'orange'}, {color:'purple]'}, {color:'yellow'}, {color:'green'}, {color:'purple'}]
+
+
 
 
 // Bonus Material: Plus Equals += 
