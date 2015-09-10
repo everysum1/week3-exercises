@@ -1,4 +1,5 @@
-// solidify on passing in variables to the brackets for objects. 
+// NOTE: In order to view your work in the browser console, be sure to add a script tag to the index.html file with a src attribute pointing to this file.
+
 
 // Your mission, should you choose to accept it, is to write a console.log after each line of code saying what you expect that variable to be at that point in time, and then logging the variable itself. I'll demonstrate with the first one below: 
 
